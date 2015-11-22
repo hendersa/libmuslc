@@ -6,10 +6,10 @@ menuconfig LIB_MUSL_C
     select HAVE_LIBC
     help
         Build Musl C standard library.
-
+# AWH - Removed prebuild default
 config LIB_MUSL_C_USE_PREBUILT
     bool "libmuslc use precompiled archive"
-    default y
+    default n
     depends on LIB_MUSL_C
     help
         If available, use the precompiled archive to improve project compile time.
